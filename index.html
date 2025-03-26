@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbSaver - YouTube Thumbnail Downloader | Free High-Quality Thumbnails</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="ThumbSaver - YouTube Thumbnail Downloader | Free High-Quality Thumbnails">
+    <meta name="description" content="Download high-quality YouTube video thumbnails instantly. Free tool to extract thumbnails from any YouTube video in various sizes. No registration required.">
+    <meta name="keywords" content="youtube thumbnail downloader, youtube thumbnail extractor, free thumbnail downloader, youtube thumbnail sizes, high quality thumbnails">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thumbsaver.com/">
+    <meta property="og:title" content="ThumbSaver - YouTube Thumbnail Downloader">
+    <meta property="og:description" content="Download high-quality YouTube video thumbnails instantly. Free tool to extract thumbnails from any YouTube video in various sizes.">
+    <meta property="og:image" content="https://thumbsaver.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thumbsaver.com/">
+    <meta property="twitter:title" content="ThumbSaver - YouTube Thumbnail Downloader">
+    <meta property="twitter:description" content="Download high-quality YouTube video thumbnails instantly. Free tool to extract thumbnails from any YouTube video in various sizes.">
+    <meta property="twitter:image" content="https://thumbsaver.com/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thumbsaver.com/">
+    
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ThumbSaver",
+        "description": "Free YouTube thumbnail downloader tool that allows users to extract high-quality thumbnails from any YouTube video.",
+        "url": "https://thumbsaver.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Download YouTube thumbnails",
+            "Multiple thumbnail sizes",
+            "High-quality images",
+            "Instant download",
+            "No registration required"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>ThumbSaver</span>
+            </div>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>ThumbSaver</h1>
+        <p class="subtitle">YouTube Thumbnail Downloader</p>
+
+        <div class="input-container">
+            <input type="text" id="videoUrl" placeholder="Paste YouTube video URL here">
+            <button onclick="getThumbnail()">Get Thumbnail</button>
+        </div>
+        <div class="thumbnail-container" id="thumbnailContainer">
+            <div class="thumbnail-options">
+                <div class="thumbnail-preview">
+                    <img id="thumbnailPreview" src="" alt="Thumbnail Preview">
+                </div>
+                <div class="download-options">
+                    <h3>Available Thumbnails:</h3>
+                    <div id="thumbnailList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <div class="how-to-use">
+            <h2>How to Use</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Copy Video URL</h3>
+                        <p>Go to YouTube and copy the URL of the video you want to download the thumbnail from</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Paste URL</h3>
+                        <p>Paste the YouTube URL into the input field above</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Thumbnail</h3>
+                        <p>Click the "Get Thumbnail" button or press Enter</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Download</h3>
+                        <p>Choose your preferred thumbnail size and click to download</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ThumbSaver is a free YouTube thumbnail downloader tool. Download high-quality thumbnails from any YouTube video.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://github.com/gulam-muhaydin" target="_blank" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61574339835488" target="_blank" title="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@freefire2k2m" target="_blank" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ThumbSaver. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
